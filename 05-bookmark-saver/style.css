@@ -1,0 +1,99 @@
+@import url('https://fonts.googleapis.com/css?family=Poppins:100,100italic,200,200italic,300,300italic,regular,italic,500,500italic,600,600italic,700,700italic,800,800italic,900,900italic&display=swap');
+@import url('https://fonts.googleapis.com/css?family=DM+Sans:100,200,300,regular,500,600,700,800,900,100italic,200italic,300italic,italic,500italic,600italic,700italic,800italic,900italic&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    display: flex;
+    font-family: 'DM Sans', sans-serif;
+    color: #333;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background-color: #f0f9f4;
+}
+
+.container {
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 15px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    max-width: 400px;
+    width: 90%;
+    text-align: center;
+}
+
+h1 {
+    color: #38c373;
+    margin-bottom: 20px;
+    font-family: 'Poppins', sans-serif;
+}
+
+.input-container {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    margin-bottom: 20px;
+}
+
+input {
+    padding: 10px;
+    border-radius: 10px;
+    border: 1px solid #ddd;
+}
+
+button {
+    padding: 10px;
+    border-radius: 10px;
+    background-color: #38c373;
+    border: 1px solid #ddd;
+    color: #fff;
+    cursor: pointer;
+    transition: background-color 0.1s ease-in-out;
+}
+
+button:hover {
+    background-color: #27ae60;
+}
+
+#bookmark-list {
+    list-style-type: none;
+    padding: 0;
+}
+
+#bookmark-list li {
+    background-color: #f9f9f9;
+    padding: 7px;
+    margin-bottom: 10px;
+    border-radius: 10px;
+    border: 1px solid #ddd;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+#bookmark-list li:hover {
+    background-color: #f6f6f6;
+}
+
+#bookmark-list a {
+    text-decoration: none;
+    color: #333;
+    font-size: 15px;
+}
+
+#bookmark-list button {
+    font-size: 18px;
+    border-radius: 8px;
+    padding: 0 5px;
+    background-color: #e74c3c;
+    border: 1px solid #ddd;
+}
+
+#bookmark-list button:hover {
+    background-color: #dc4031;
+}

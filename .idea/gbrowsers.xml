@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="GBrowserService"><![CDATA[{
+  "theme": "LIGHT",
+  "history": [
+    {
+      "name": "GBrowser - IntelliJ IDEs Plugin | Marketplace",
+      "url": "https://plugins.jetbrains.com/plugin/14458-gbrowser"
+    },
+    {
+      "name": "localhost:3000",
+      "url": "http://localhost:3000/"
+    },
+    {
+      "name": "Quiz Game",
+      "url": "file:///Users/guranshbir2012/WebstormProjects/100Projects/01-quiz-game/index.html"
+    },
+    {
+      "name": "Color-Palette Generator",
+      "url": "file:///Users/guranshbir2012/Development/Learning/100Projects/02-color-pallete-generator/index.html"
+    },
+    {
+      "name": "Document",
+      "url": "file:///Users/guranshbir2012/Development/Learning/100Projects/03-drag-and-drop/index.html"
+    },
+    {
+      "name": "Expense Tracker",
+      "url": "file:///Users/guranshbir2012/Development/Learning/100Projects/04-expense-tracker/index.html"
+    },
+    {
+      "name": "Expense Tracker",
+      "url": "file:///Users/guranshbir2012/Development/Learning/100Projects/04-expense-tracker/index.html?"
+    },
+    {
+      "name": "Bookmark Saver",
+      "url": "file:///Users/guranshbir2012/Development/Learning/100Projects/05-bookmark-saver/index.html"
+    },
+    {
+      "name": "YouTube",
+      "url": "https://www.youtube.com/"
+    },
+    {
+      "name": "Form Validator",
+      "url": "file:///Users/guranshbir2012/Development/Learning/100Projects/06-form-validator/index.html"
+    },
+    {
+      "name": "Form Validator",
+      "url": "file:///Users/guranshbir2012/Development/Learning/100Projects/06-form-validator/index.html?"
+    },
+    {
+      "name": "Password Generator",
+      "url": "file:///Users/guranshbir2012/Development/Learning/100Projects/07-password-generator/index.html"
+    },
+    {
+      "name": "Contact Form",
+      "url": "file:///Users/guranshbir2012/Development/Learning/100Projects/09-contact-form/index.html"
+    }
+  ]
+}]]></component>
+</project>

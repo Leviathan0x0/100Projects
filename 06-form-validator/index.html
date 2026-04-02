@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8"/>
+    <meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+    <title>Form Validator</title>
+    <link href="style.css" rel="stylesheet"/>
+    <link crossorigin="anonymous" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css"
+          integrity="sha512-2SwdPD6INVrV/lHTZbO2nodKhrnDdJK9/kg2XD1r9uGqPo1cUbujc+IYdlYdEErWNu69gVcYgdxlmVmzTWnetw=="
+          referrerpolicy="no-referrer" rel="stylesheet"/>
+</head>
+<body>
+<div class="container">
+    <form id="registration-form">
+        <h1>Register</h1>
+
+        <!-- username -->
+        <div class="form-group">
+            <label for="username">Username</label>
+            <input id="username" placeholder="For e.g. John" type="text"><i class="fas fa-check"></i>
+            <small>‎ <i class="fa-solid fa-circle-exclamation"></i>‎ </small>
+        </div>
+        <!-- email -->
+        <div class="form-group">
+            <label for="email">Email</label>
+            <input id="email" placeholder="For e.g. john.doe@example.com" type="email"/><i class="fas fa-check"></i>
+            <small>‎ <i class="fa-solid fa-circle-exclamation"></i>‎ </small>
+        </div>
+        <!-- password -->
+        <div class="form-group">
+            <label for="password">Password</label>
+            <input id="password" placeholder="For e.g. JohnLikesApples123#" type="password"/><i
+                class="fas fa-check"></i>
+            <small>‎ <i class="fa-solid fa-circle-exclamation"></i> ‎</small>
+        </div>
+        <!-- confirm password -->
+        <div class="form-group">
+            <label for="confirmPassword">Confirm Password</label>
+            <input id="confirmPassword" placeholder="Same as the password" type="password"/><i class="fas fa-check"></i>
+            <small>‎ <i class="fa-solid fa-circle-exclamation"></i>‎ </small>
+        </div>
+        <!-- submit btn -->
+        <button type="submit">Register</button>
+    </form>
+</div>
+
+<script src="script.js"></script>
+</body>
+</html>
