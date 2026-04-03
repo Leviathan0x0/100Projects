@@ -12,6 +12,37 @@
     <link href="style.css" rel="stylesheet">
 </head>
 <body>
+<div class="container">
+    <header>
+        <h1><i class="fas fa-utensils"></i>Recipe Finder</h1>
+        <p>Find delicious recipes from around the world</p>
+    </header>
+
+    <p class="api-link">Data from <a href="https://www.themealdb.com/api.php">TheMealDB</a></p>
+
+    <div class="search-container">
+        <input id="search-input" placeholder="Search for recipes or keywords..." type="text">
+        <button id="search-btn"><i class="fas fa-search"></i></button>
+    </div>
+
+    <div class="hidden" id="error-container">
+        <i class="fas fa-burger"></i>
+        <p id="error-heading">No recipes found.</p>
+        <span id="error-text"> Try another search term!</span>
+    </div>
+
+    <div class="hidden" id="result-container">
+        <span id="result-heading"></span>
+    </div>
+
+    <div class="meals-container" id="meals"></div>
+
+    <div class="hidden" id="meal-details">
+        <button id="back-btn"><i class="fas fa-arrow-left"></i> Back to Recipes</button>
+        <div class="meal-details-content"></div>
+    </div>
+</div>
+
 <script src="script.js"></script>
 </body>
 </html>

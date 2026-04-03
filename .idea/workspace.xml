@@ -4,7 +4,13 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="6ae94b52-7be7-493a-93cb-b6cefba8ea4a" name="Changes" comment="" />
+    <list default="true" id="6ae94b52-7be7-493a-93cb-b6cefba8ea4a" name="Changes" comment="">
+      <change beforePath="$PROJECT_DIR$/.idea/inspectionProfiles/Project_Default.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/inspectionProfiles/Project_Default.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/12-recipe-finder/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/12-recipe-finder/index.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/12-recipe-finder/script.js" beforeDir="false" afterPath="$PROJECT_DIR$/12-recipe-finder/script.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/12-recipe-finder/style.css" beforeDir="false" afterPath="$PROJECT_DIR$/12-recipe-finder/style.css" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -38,6 +44,9 @@
   <component name="FormatOnSaveOptions">
     <option name="myRunOnSave" value="true" />
   </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
   <component name="HighlightingSettingsPerFile">
     <setting file="file://$PROJECT_DIR$/01-quiz-game/index.html" root0="SKIP_INSPECTION" />
   </component>
@@ -63,9 +72,11 @@
     "Node.js.script.js.executor": "Run",
     "RunOnceActivity.ShowReadmeOnStart": "true",
     "RunOnceActivity.TerminalTabsStorage.copyFrom.TerminalArrangementManager.252": "true",
+    "RunOnceActivity.git.unshallow": "true",
     "code.cleanup.on.save": "true",
     "com.intellij.ml.llm.matterhorn.ej.ui.settings.DefaultModelSelectionForGA.v1": "true",
     "copilot.sensitive.allow.copilot_read_file.files_outside_workspace": "true",
+    "git-widget-placeholder": "main",
     "junie.onboarding.icon.badge.shown": "true",
     "last_opened_file_path": "/Users/guranshbir2012/Development/Learning/100Projects/18-contact-page",
     "list.type.of.created.stylesheet": "CSS",
@@ -79,7 +90,7 @@
     "node.js.selected.package.tslint": "(autodetect)",
     "nodejs_package_manager_path": "npm",
     "rearrange.code.on.save": "true",
-    "settings.editor.selected.configurable": "settings.javascript.prettier",
+    "settings.editor.selected.configurable": "preferences.general",
     "to.speed.mode.migration.done": "true",
     "vue.rearranger.settings.migration": "true"
   },
@@ -111,9 +122,9 @@
     </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="JavaScript Debug.index.html" />
         <item itemvalue="JavaScript Debug.index.html (2)" />
         <item itemvalue="JavaScript Debug.index.html (1)" />
-        <item itemvalue="JavaScript Debug.index.html" />
       </list>
     </recent_temporary>
   </component>
@@ -135,7 +146,8 @@
       <workItem from="1774882109002" duration="2179000" />
       <workItem from="1774884383619" duration="8224000" />
       <workItem from="1774940304626" duration="2138000" />
-      <workItem from="1774943320836" duration="68400000" />
+      <workItem from="1774943320836" duration="81977000" />
+      <workItem from="1775205130141" duration="7870000" />
     </task>
     <servers />
   </component>
