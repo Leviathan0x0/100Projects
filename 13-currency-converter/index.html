@@ -12,6 +12,31 @@
     <link href="style.css" rel="stylesheet">
 </head>
 <body>
+<div class="container">
+    <h1>Currency Converter</h1>
+
+    <form id="converter-form">
+        <!--        AMOUNT-->
+        <div class="form-group">
+            <label for="amount">Amount</label>
+            <input id="amount" required type="number">
+        </div>
+        <!--        FROM-->
+        <div class="form-group">
+            <label for="from-currency">From</label>
+            <select id="from-currency"></select>
+        </div>
+        <!--        TO-->
+        <div class="form-group">
+            <label for="to-currency">To</label>
+            <select id="to-currency"></select>
+        </div>
+
+        <button type="submit">Convert</button>
+    </form>
+
+    <div id="result">150 USD = 132.45 EUR</div>
+</div>
 <script src="script.js"></script>
 </body>
 </html>

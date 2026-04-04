@@ -1,17 +1,99 @@
 <!doctype html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0"
-          name="viewport">
-    <meta content="ie=edge" http-equiv="X-UA-Compatible">
-    <title>GitHub Finder</title>
-    <link crossorigin="anonymous" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css"
-          integrity="sha512-2SwdPD6INVrV/lHTZbO2nodKhrnDdJK9/kg2XD1r9uGqPo1cUbujc+IYdlYdEErWNu69gVcYgdxlmVmzTWnetw=="
-          referrerpolicy="no-referrer" rel="stylesheet"/>
-    <link href="style.css" rel="stylesheet">
-</head>
-<body>
-<script src="script.js"></script>
-</body>
+	<head>
+		<meta charset="UTF-8" />
+		<meta content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0" name="viewport" />
+		<meta content="ie=edge" http-equiv="X-UA-Compatible" />
+		<title>GitHub Finder</title>
+		<link
+			crossorigin="anonymous"
+			href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css"
+			integrity="sha512-2SwdPD6INVrV/lHTZbO2nodKhrnDdJK9/kg2XD1r9uGqPo1cUbujc+IYdlYdEErWNu69gVcYgdxlmVmzTWnetw=="
+			referrerpolicy="no-referrer"
+			rel="stylesheet"
+		/>
+		<link href="style.css" rel="stylesheet" />
+	</head>
+	<body>
+		<div class="container">
+			<header>
+				<h1><i class="fab fa-github"></i> GitHub User Finder</h1>
+				<p>Search for any GitHub user to see their profile and repositories</p>
+			</header>
+
+			<div class="search-container">
+				<input autocomplete="off" id="search" name="search" placeholder="Enter a GitHub username..." type="text" />
+				<button id="search-btn"><i class="fas fa-search"></i></button>
+			</div>
+
+			<div class="hidden" id="profile-container">
+				<div class="profile-header">
+					<img alt="Profile Avatar" id="avatar" src="" />
+					<div class="profile-info">
+						<h2 id="name"></h2>
+						<p id="username"></p>
+						<p id="bio">Lorem ipsum nisi minim incididunt.</p>
+						<div class="location-date">
+							<p>
+								<i class="fas fa-map-marker-alt"></i>
+								<span id="location">Not Specified</span>
+							</p>
+							<p>
+								<i class="far fa-calendar-alt"></i>
+								Joined <span id="joined-date"></span>
+							</p>
+						</div>
+						<a class="btn" id="profile-link" target="_blank">View Profile</a>
+					</div>
+				</div>
+
+				<div class="stats">
+					<!--                FOLLOWERS-->
+					<div class="stat">
+						<i class="fas fa-users"></i>
+						<span id="followers"></span> followers
+					</div>
+					<!--            FOLLOWING-->
+					<div class="stat">
+						<i class="fas fa-user-friends"></i>
+						<span id="following"></span> following
+					</div>
+					<!--            REPOSITORIES-->
+					<div class="stat">
+						<i class="fas fa-code-branch"></i>
+						<span id="repos"></span> repositories
+					</div>
+				</div>
+
+				<div class="additional-info">
+					<div class="info-item" id="company-container">
+						<i class="fas fa-building"></i>
+						<span id="company">Not Specified</span>
+					</div>
+					<div class="info-item" id="blog-container">
+						<i class="fas fa-link"></i>
+						<a id="blog" target="_blank">No website</a>
+					</div>
+					<div class="info-item" id="twitter-container">
+						<i class="fab fa-x-twitter"></i>
+						<a id="twitter" target="_blank">No Twitter</a>
+					</div>
+				</div>
+
+				<div class="repos-section">
+					<h3>Latest Repositories</h3>
+					<div class="repos-container" id="repos-container">
+						<div class="loading-repos"></div>
+					</div>
+				</div>
+			</div>
+
+			<div class="hidden" id="error-container">
+				<i class="fas fa-exclamation-triangle"></i>
+				<h2 id="error-heading">User Not Found</h2>
+				<p id="error-text">Please check the username and try again.</p>
+			</div>
+		</div>
+		<script src="script.js"></script>
+	</body>
 </html>
