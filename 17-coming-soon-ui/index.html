@@ -1,17 +1,106 @@
 <!doctype html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0"
-          name="viewport">
-    <meta content="ie=edge" http-equiv="X-UA-Compatible">
-    <title>Coming Soon UI</title>
-    <link crossorigin="anonymous" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css"
-          integrity="sha512-2SwdPD6INVrV/lHTZbO2nodKhrnDdJK9/kg2XD1r9uGqPo1cUbujc+IYdlYdEErWNu69gVcYgdxlmVmzTWnetw=="
-          referrerpolicy="no-referrer" rel="stylesheet"/>
-    <link href="style.css" rel="stylesheet">
-</head>
-<body>
-<script src="script.js"></script>
-</body>
+	<head>
+		<meta charset="UTF-8" />
+		<meta content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0" name="viewport" />
+		<meta content="ie=edge" http-equiv="X-UA-Compatible" />
+		<title>Coming Soon UI</title>
+		<link
+			crossorigin="anonymous"
+			href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css"
+			integrity="sha512-2SwdPD6INVrV/lHTZbO2nodKhrnDdJK9/kg2XD1r9uGqPo1cUbujc+IYdlYdEErWNu69gVcYgdxlmVmzTWnetw=="
+			referrerpolicy="no-referrer"
+			rel="stylesheet"
+		/>
+		<link href="style.css" rel="stylesheet" />
+		<script defer src="script.js"></script>
+	</head>
+	<body>
+		<!--		ANIMATED BG-->
+		<div class="bg">
+			<div class="blob blob-1"></div>
+			<div class="blob blob-2"></div>
+			<div class="blob blob-3"></div>
+		</div>
+
+		<!--		MAIN CONTENT-->
+		<main class="container">
+			<!--			LOGO-->
+			<div class="logo">
+				<div class="logo-icon">
+					<i class="fas fa-bolt"></i>
+				</div>
+				<span>Flux</span>
+			</div>
+
+			<!--			HERO SECTION-->
+			<section class="hero">
+				<div class="badge">
+					<span class="pulse"></span>
+					Coming Soon
+				</div>
+
+				<h1>Something awesome is brewing.</h1>
+				<p>We're working hard to bring you something special. Be the first to know when we launch.</p>
+			</section>
+
+			<!--			COUNTDOWN-->
+			<section class="countdown">
+				<div class="time-block">
+					<span class="time-value" id="days">00</span>
+					<span class="time-label">Days</span>
+				</div>
+
+				<span class="separator">:</span>
+
+				<div class="time-block">
+					<span class="time-value" id="hours">00</span>
+					<span class="time-label">Hours</span>
+				</div>
+
+				<span class="separator">:</span>
+
+				<div class="time-block">
+					<span class="time-value" id="minutes">00</span>
+					<span class="time-label">Minutes</span>
+				</div>
+
+				<span class="separator">:</span>
+
+				<div class="time-block">
+					<span class="time-value" id="seconds">00</span>
+					<span class="time-label">Seconds</span>
+				</div>
+			</section>
+
+			<!--			EMAIL FORM-->
+			<form class="email-form form" id="email-form">
+				<div class="input-group">
+					<i class="fas fa-envelope"></i>
+					<input placeholder="Enter your email" required type="email" />
+				</div>
+
+				<button type="submit">Notify Me <i class="fas fa-arrow-right"></i></button>
+			</form>
+
+			<!--			SUCCESS MESSAGE-->
+			<div class="success-message hidden" id="success">
+				<i class="fas fa-check-circle"></i>
+				<span>You're on the list! We'll notify you when we launch.</span>
+			</div>
+
+			<!--			SOCIAL LINKS-->
+			<div class="socials">
+				<a href="#">
+					<i class="fab fa-x-twitter"></i>
+				</a>
+				<a href="#">
+					<i class="fab fa-instagram"></i>
+				</a>
+				<a href="#">
+					<i class="fab fa-discord"></i>
+				</a>
+			</div>
+		</main>
+	</body>
 </html>
