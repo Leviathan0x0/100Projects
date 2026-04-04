@@ -1,17 +1,41 @@
 <!doctype html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0"
-          name="viewport">
-    <meta content="ie=edge" http-equiv="X-UA-Compatible">
-    <title>Newsletter Signup</title>
-    <link crossorigin="anonymous" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css"
-          integrity="sha512-2SwdPD6INVrV/lHTZbO2nodKhrnDdJK9/kg2XD1r9uGqPo1cUbujc+IYdlYdEErWNu69gVcYgdxlmVmzTWnetw=="
-          referrerpolicy="no-referrer" rel="stylesheet"/>
-    <link href="style.css" rel="stylesheet">
-</head>
-<body>
-<script src="script.js"></script>
-</body>
+	<head>
+		<meta charset="UTF-8" />
+		<meta content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0" name="viewport" />
+		<meta content="ie=edge" http-equiv="X-UA-Compatible" />
+		<title>Newsletter Signup</title>
+		<link
+			crossorigin="anonymous"
+			href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css"
+			integrity="sha512-2SwdPD6INVrV/lHTZbO2nodKhrnDdJK9/kg2XD1r9uGqPo1cUbujc+IYdlYdEErWNu69gVcYgdxlmVmzTWnetw=="
+			referrerpolicy="no-referrer"
+			rel="stylesheet"
+		/>
+		<link href="style.css" rel="stylesheet" />
+	</head>
+	<body>
+		<div class="signup-container">
+			<div class="icon-container">
+				<i class="far fa-envelope-open"></i>
+			</div>
+			<h2>Join Our Newsletter</h2>
+			<p>Get the latest updates and coding tips straight to your inbox.</p>
+
+			<form>
+				<div class="input-group">
+					<i class="far fa-envelope"></i>
+					<input autocomplete="off" placeholder="Enter your email" required type="email"/>
+				</div>
+
+				<button>Subscribe <i class="fas fa-arrow-right"></i></button>
+			</form>
+
+			<div class="benefits">
+				<p class="benefit-item"><i class="fas fa-check"></i> Weekly coding tips</p>
+				<p class="benefit-item"><i class="fas fa-check"></i> No spam, unsubscribe anytime</p>
+			</div>
+		</div>
+		<script src="script.js"></script>
+	</body>
 </html>
