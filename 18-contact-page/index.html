@@ -1,17 +1,128 @@
 <!doctype html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0"
-          name="viewport">
-    <meta content="ie=edge" http-equiv="X-UA-Compatible">
-    <title>Contact Page</title>
-    <link crossorigin="anonymous" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css"
-          integrity="sha512-2SwdPD6INVrV/lHTZbO2nodKhrnDdJK9/kg2XD1r9uGqPo1cUbujc+IYdlYdEErWNu69gVcYgdxlmVmzTWnetw=="
-          referrerpolicy="no-referrer" rel="stylesheet"/>
-    <link href="style.css" rel="stylesheet">
-</head>
-<body>
-<script src="script.js"></script>
-</body>
+	<head>
+		<meta charset="UTF-8" />
+		<meta content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0" name="viewport" />
+		<meta content="ie=edge" http-equiv="X-UA-Compatible" />
+		<title>Contact Page</title>
+		<link
+			crossorigin="anonymous"
+			href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css"
+			integrity="sha512-2SwdPD6INVrV/lHTZbO2nodKhrnDdJK9/kg2XD1r9uGqPo1cUbujc+IYdlYdEErWNu69gVcYgdxlmVmzTWnetw=="
+			referrerpolicy="no-referrer"
+			rel="stylesheet"
+		/>
+		<link href="style.css" rel="stylesheet" />
+		<script defer src="script.js"></script>
+	</head>
+	<body>
+		<div class="container">
+			<!--		LEFT SIDE - INFO SECTION-->
+			<section class="info-section">
+				<div class="info-content">
+					<span class="badge">Contact</span>
+					<h1>Let's work together</h1>
+					<p>Have a project in mind? We'd love to hear from you. Send us a message and we'll respond as soon as possible.</p>
+
+					<div class="contact-cards">
+						<div class="contact-card">
+							<div class="card-icon">
+								<i class="fas fa-envelope"></i>
+							</div>
+
+							<div class="card-info">
+								<span class="card-label">Email</span>
+								<a href="mailto:guranshbir2012@gmail.com">steven.hart40@gmail.com</a>
+							</div>
+						</div>
+
+						<div class="contact-card">
+							<div class="card-icon">
+								<i class="fas fa-phone"></i>
+							</div>
+
+							<div class="card-info">
+								<span class="card-label">Phone</span>
+								<a href="tel:+1234567890">+1 (478) 527-811</a>
+							</div>
+						</div>
+
+						<div class="contact-card">
+							<div class="card-icon">
+								<i class="fa-solid fa-location-dot"></i>
+							</div>
+
+							<div class="card-info">
+								<span class="card-label">Office</span>
+								<span>72 Lutyen Lane, Sector 43, Manhattan</span>
+							</div>
+						</div>
+					</div>
+
+					<div class="socials">
+						<a aria-label="Twitter" href="#"><i class="fa-brands fa-x-twitter"></i></a>
+						<a aria-label="LinkedIn" href="#"><i class="fa-brands fa-linkedin-in"></i></a>
+						<a aria-label="Instagram" href="#"><i class="fa-brands fa-instagram"></i></a>
+						<a aria-label="GitHub" href="#"><i class="fa-brands fa-github"></i></a>
+					</div>
+				</div>
+			</section>
+
+			<!--			RIGHT SIDE - FORM SECTION-->
+			<section class="form-section">
+				<form class="contact-form" id="contact-form">
+					<h2>Send a message</h2>
+
+					<div class="form-row">
+						<div class="form-group">
+							<label for="first-name">First name</label>
+							<input id="first-name" placeholder="John" required type="text" />
+						</div>
+
+						<div class="form-group">
+							<label for="last-name">Last name</label>
+							<input id="last-name" placeholder="Doe" required type="text" />
+						</div>
+					</div>
+
+					<div class="form-group">
+						<label for="email">Email</label>
+						<input id="email" placeholder="john@example.com" required type="email" />
+					</div>
+
+					<div class="form-group">
+						<label for="subject">Subject</label>
+						<select id="subject">
+							<option disabled selected value="">Select a topic</option>
+							<option value="general">General Inquiry</option>
+							<option value="support">Technical Support</option>
+							<option value="sales">Sales Question</option>
+							<option value="partnership">Partnership</option>
+							<option value="other">Other</option>
+						</select>
+					</div>
+
+					<div class="form-group">
+						<label for="message">Message</label>
+						<textarea id="message" placeholder="Tell us about your project..." required rows="5"></textarea>
+					</div>
+
+					<button class="submit-btn" type="submit">
+						<span>Send Message</span>
+						<i class="fa-solid fa-arrow-right"></i>
+					</button>
+				</form>
+
+				<div class="success-state hidden" id="success">
+					<div class="success-icon">
+						<i class="fas fa-check"></i>
+					</div>
+
+					<h2>Message sent!</h2>
+					<p>Thanks for reaching out. We'll get back to you within 24 hours.</p>
+					<button class="reset-btn" id="reset-btn">Send another message</button>
+				</div>
+			</section>
+		</div>
+	</body>
 </html>
