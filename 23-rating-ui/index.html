@@ -1,0 +1,73 @@
+<!doctype html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta content="width=device-width, initial-scale=1.0" name="viewport" />
+		<!-- displays site properly based on user's device -->
+
+		<link href="./images/favicon-32x32.png" rel="icon" sizes="32x32" type="image/png" />
+
+		<title>Frontend Mentor | Interactive rating component</title>
+		<link href="style.css" rel="stylesheet" />
+		<script defer src="script.js"></script>
+		<link href="https://fonts.googleapis.com/css2?family=Ubuntu:wght@400;500;700&display=swap" rel="stylesheet" />
+	</head>
+	<body>
+		<div class="container">
+			<div class="rating-screen">
+				<div class="icon">
+					<img alt="star-icon" src="images/icon-star.svg" />
+				</div>
+
+				<h1 class="heading">How did we do?</h1>
+				<p class="description">
+					Please let us know how we did with your support request. All feedback is appreciated to help us improve our offering!
+				</p>
+
+				<div class="rating-wrapper">
+					<div class="rating-btn">
+						<label for="rating-one">1</label>
+						<input id="rating-one" name="rating-btn" type="radio" value="1" />
+					</div>
+
+					<div class="rating-btn">
+						<label for="rating-two">2</label>
+						<input id="rating-two" name="rating-btn" type="radio" value="2" />
+					</div>
+
+					<div class="rating-btn">
+						<label for="rating-three">3</label>
+						<input id="rating-three" name="rating-btn" type="radio" value="3" />
+					</div>
+
+					<div class="rating-btn">
+						<label for="rating-four">4</label>
+						<input id="rating-four" name="rating-btn" type="radio" value="4" />
+					</div>
+
+					<div class="rating-btn">
+						<label for="rating-five">5</label>
+						<input id="rating-five" name="rating-btn" type="radio" value="5" />
+					</div>
+				</div>
+
+				<button type="submit">Submit</button>
+			</div>
+
+			<div class="ty-state hidden">
+				<div class="img-wrapper">
+					<img alt="Thank You!" src="images/illustration-thank-you.svg" />
+				</div>
+
+				<div class="rating">
+					<p>You selected <span id="rating"></span> out of 5</p>
+				</div>
+
+				<h1 class="heading">Thank you!</h1>
+				<p class="description">
+					We appreciate you taking the time to give a rating. If you ever need more support, don’t hesitate to get in touch!
+				</p>
+			</div>
+		</div>
+	</body>
+</html>
