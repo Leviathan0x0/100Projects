@@ -1,3 +1,5 @@
 .prettierrc
 .DS_Store
 .idea
+.gitignore
+Icon
