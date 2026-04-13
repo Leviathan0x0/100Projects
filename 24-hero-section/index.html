@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta content="width=device-width, initial-scale=1.0" name="viewport">
+    <!-- displays site properly based on user's device -->
+    <link href="./images/favicon-32x32.png" rel="icon" sizes="32x32" type="image/png">
+    <link href="style.css" rel="stylesheet">
+    <script src="script.js" defer></script>
+    <link crossorigin="anonymous" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css"
+          integrity="sha512-2SwdPD6INVrV/lHTZbO2nodKhrnDdJK9/kg2XD1r9uGqPo1cUbujc+IYdlYdEErWNu69gVcYgdxlmVmzTWnetw=="
+          referrerpolicy="no-referrer" rel="stylesheet"/>
+    <title>Website Landing Page</title>
+</head>
+<body>
+<main>
+    <nav>
+        <img alt="logo" class="logo" src="./images/logo.svg">
+        <ul class="nav-items">
+            <i class="fas fa-xmark"></i>
+            <li class="nav-item feature-nav">
+                <a href="#">Features <i class="fas fa-angle-down"></i></a>
+                <div class="features-list nav-list">
+                    <ul>
+                        <li class="nav-list-item"><img alt="" class="feature-icon" src="images/icon-todo.svg">Todo
+                            List
+                        </li>
+                        <li class="nav-list-item"><img alt="" class="feature-icon" src="images/icon-calendar.svg">Calendar
+                        </li>
+                        <li class="nav-list-item"><img alt="" class="feature-icon" src="images/icon-reminders.svg">Reminders
+                        </li>
+                        <li class="nav-list-item"><img alt="" class="feature-icon" src="images/icon-planning.svg">Planning
+                        </li>
+                    </ul>
+                </div>
+            </li>
+            <li class="nav-item company-nav">
+                <a href="#">Company <i class="fas fa-angle-down"></i></a>
+                <div class="company-list nav-list">
+                    <ul>
+                        <li class="nav-list-item">History</li>
+                        <li class="nav-list-item">Our Team</li>
+                        <li class="nav-list-item">Blog</li>
+                    </ul>
+                </div>
+            </li>
+            <li class="nav-item">
+                <a href="#">Careers</a>
+            </li>
+            <li class="nav-item">
+                <a href="#">About</a>
+            </li>
+
+            <div class="btn-wrapper">
+                <button class="login">Login</button>
+                <button class="register">Register</button>
+            </div>
+        </ul>
+
+        <div class="mobile-nav-btn">
+            <i class="fas fa-bars"></i>
+        </div>
+    </nav>
+
+    <section class="hero">
+        <div class="wrapper">
+            <h1>Make <br>remote work</h1>
+            <p>Get your team in sync, no matter your location. Streamline processes,
+                create team rituals, and watch productivity soar.</p>
+            <button class="learn-more">Learn more</button>
+
+            <div class="brand-wrapper">
+                <img alt="Databiz" class="brand" src="images/client-databiz.svg">
+                <img alt="Audiophile" class="brand" src="images/client-audiophile.svg">
+                <img alt="Meet" class="brand" src="images/client-meet.svg">
+                <img alt="Maker" class="brand" src="images/client-maker.svg">
+            </div>
+        </div>
+
+        <div class="img-container">
+            <picture>
+                <source media="(max-width: 768px)" srcset="images/image-hero-mobile.png">
+                <img alt="Hero illustration" class="image" src="images/image-hero-desktop.png">
+            </picture>
+        </div>
+    </section>
+</main>
+</body>
+</html>

@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
+  <link rel="icon" type="image/png" sizes="32x32" href="./assets/images/favicon-32x32.png">
+  <link rel="stylesheet" href="style.css">
+  <title>Newsletter Sign-Up</title>
+  <script src="script.js" defer></script>
+</head>
+<body>
+<div class="container">
+    <div class="main-content">
+        <h1 class="heading">Stay updated!</h1>
+        <p class="desc">Join 60,000+ product managers receiving monthly updates on:</p>
+        <ul class="benefits">
+            <li class="benefit-item"><img src="assets/images/icon-list.svg" alt="List" class="list-icon"> Product discovery and building what matters</li>
+            <li class="benefit-item"><img src="assets/images/icon-list.svg" alt="List" class="list-icon"> Measuring to ensure updates are a success</li>
+            <li class="benefit-item"><img src="assets/images/icon-list.svg" alt="List" class="list-icon"> And much more!</li>
+        </ul>
+
+        <form action="" class="newsletter-wrapper">
+            <div class="form-group">
+                <div class="input-info">
+                    <label for="email">Email Address</label>
+                    <span class="error-msg"></span>
+                </div>
+                <input name="email" id="email" placeholder="email@company.com" required type="text">
+            </div>
+            <button type="submit" id="sub-btn">Subscribe</button>
+        </form>
+    </div>
+
+    <div class="success hidden">
+        <img src="assets/images/icon-success.svg" alt="Success Icon" class="success-icon">
+
+        <h1 class="heading">Thanks for Subscribing!</h1>
+        <p class="desc"> A confirmation email has been sent to <b id="email-address">ash@loremcompany.com</b>. Please open it and click the button inside to confirm your subscription.</p>
+
+        <button type="submit" id="dismiss-btn">Dismiss Message</button>
+    </div>
+
+    <div class="img-container"></div>
+
+</div>
+</body>
+</html>

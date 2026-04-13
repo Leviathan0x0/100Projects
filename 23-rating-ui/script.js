@@ -26,3 +26,5 @@ function showSuccessState() {
 
 	rating.textContent = `${currentRating}`;
 }
+
+

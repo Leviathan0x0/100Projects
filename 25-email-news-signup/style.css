@@ -1,0 +1,201 @@
+@import url('https://fonts.googleapis.com/css?family=DM+Sans:100,200,300,regular,500,600,700,800,900,100italic,200italic,300italic,italic,500italic,600italic,700italic,800italic,900italic&display=swap');
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'DM Sans', sans-serif;
+    background-color: hsl(235, 18%, 26%);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+.container {
+    display: flex;
+    padding: 1.5rem;
+    background: hsl(0, 0%, 100%);
+    border-radius: 2rem;
+    width: max-content;
+    margin: 0 2rem 0 2rem;
+}
+
+.main-content {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding: 3rem 2rem;
+}
+
+.heading {
+    color: hsl(234, 29%, 20%);
+    font-size: 2.5rem;
+    margin-bottom: .875rem;
+}
+
+.desc {
+    margin-bottom: 1.25rem;
+}
+
+.benefits {
+    margin-bottom: 1rem;
+}
+
+.benefit-item {
+    display: flex;
+    list-style: none;
+    align-items: center;
+    margin-bottom: 1rem;
+    gap: .75rem;
+}
+
+.list-icon {
+    align-self: start;
+}
+
+.img-container {
+    width: 400px;
+    background-image: url("assets/images/illustration-sign-up-desktop.svg");
+    border-radius: 1rem;
+}
+
+.hidden {
+    display: none !important;
+}
+
+.form-group {
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 1rem;
+}
+
+input {
+    padding: 1rem;
+    border-radius: 1rem;
+    border: 2px solid #ddd;
+    font-size: .9rem;
+    font-family: inherit;
+    outline: none;
+    transition: color 0.3s, border-color 0.3s;
+}
+
+.error-msg {
+    color: hsl(4, 100%, 67%);
+    display: none;
+}
+
+.form-group.error input{
+    border-color: hsl(4, 100%, 67%);
+    background-color: hsla(4, 100%, 67%, 0.15);
+    color: hsl(4, 100%, 67%);
+
+    &::placeholder {
+        color: hsl(4, 100%, 67%);
+    }
+}
+
+.form-group.error .error-msg {
+    display: block;
+}
+
+.main-content.hidden .img-container {
+    display: none !important;
+}
+
+button {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 1rem 2rem;
+    font-size: .9rem;
+    font-weight: 500;
+    font-family: inherit;
+    border-radius: 1rem;
+    border: none;
+    background-color: hsl(234, 29%, 20%);
+    color: white;
+    cursor: pointer;
+    transition: background-color 0.3s, opacity 0.3s;
+
+    &:hover {
+        background-color: hsl(234, 29%, 17%);
+    }
+}
+
+.input-info {
+    display: flex;
+    justify-content: space-between;
+    flex: 1;
+    font-size: 0.875rem;
+    font-weight: 600;
+    margin-bottom: 0.5rem;
+}
+
+.success {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    padding: 0 1rem;
+
+    h1 {
+        width: 350px;
+        line-height: 1.2;
+        margin-bottom: 1rem;
+    }
+
+    p {
+        margin-bottom: 2rem;
+        width: 20rem;
+    }
+
+    button {
+        margin-top: 1rem;
+    }
+}
+
+.success-icon {
+    margin-bottom: 2rem;
+}
+
+button:disabled {
+    opacity: 0.8;
+}
+
+/*MOBILE DESIGN*/
+@media (max-width: 550px) {
+    .container {
+        height: 100%;
+        width: 100%;
+        border-radius: 0;
+        padding: 0;
+        flex-direction: column-reverse;
+        margin: 0;
+    }
+
+    .img-container {
+        border: none;
+        background-size: cover;
+        width: 100%;
+        height: 100%;
+        background-image: url("assets/images/illustration-sign-up-mobile.svg");
+        border-radius: 0 0 24px 24px;
+    }
+
+    .success {
+        display: flex;
+        flex-direction: column;
+        height: 100%;
+        margin-top: 5rem;
+    }
+
+    #dismiss-btn {
+        margin-top: auto;
+        margin-bottom: 2rem;
+    }
+}
