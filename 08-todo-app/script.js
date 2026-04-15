@@ -20,7 +20,6 @@ filters.forEach((filter) => {
 	filter.addEventListener('click', () => {
 		setActiveFilter(filter.getAttribute('data-filter'));
 	});
-	checkEmptyState();
 });
 
 function addTodo(text) {
@@ -142,9 +141,9 @@ function setActiveFilter(filter) {
 		} else {
 			f.classList.remove('active');
 		}
-
-		renderTodos();
 	});
+	renderTodos();
+	checkEmptyState();
 }
 
 function setDate() {
