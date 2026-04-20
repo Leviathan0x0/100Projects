@@ -53,31 +53,26 @@ arithmeticSymbols.forEach((operation) => {
 	operation.addEventListener('click', (e) => {
 		const lastCharacter = resultInput.value.at(-1);
 		const secondLastChar = resultInput.value.at(-2);
-const isSecondLastCharOperator = secondLastChar === '-' || secondLastChar === '+' || secondLastChar === '×' || secondLastChar === '÷';
+		const isSecondLastCharOperator = secondLastChar === '-' || secondLastChar === '+' || secondLastChar === '×' || secondLastChar === '÷';
 
-if (resultInput.value === '') return;
-if (lastCharacter === e.target.textContent && e.target.textContent !== '-') return;
-if (lastCharacter === '+' && (e.target.textContent === '×' || e.target.textContent === '÷')) return;
-if (lastCharacter === '×' && (e.target.textContent === '+' || e.target.textContent === '÷')) return;
-if (lastCharacter === '÷' && (e.target.textContent === '×' || e.target.textContent === '+')) return;
+		if (resultInput.value === '') return;
+		if (lastCharacter === e.target.textContent && e.target.textContent !== '-') return;
+		if (lastCharacter === '+' && (e.target.textContent === '×' || e.target.textContent === '÷')) return;
+		if (lastCharacter === '×' && (e.target.textContent === '+' || e.target.textContent === '÷')) return;
+		if (lastCharacter === '÷' && (e.target.textContent === '×' || e.target.textContent === '+')) return;
 
-// Prevent ANY other sign after a minus sign
-if (lastCharacter === '-' && e.target.textContent !== '-') return;
+		// Prevent ANY other sign after a minus sign
+		if (lastCharacter === '-' && e.target.textContent !== '-') return;
 
-// Prevent three minus signs in a row, or a minus sign after another operator and a minus sign (e.g., ×--)
-if (
-        isSecondLastCharOperator &&
-        lastCharacter === '-' &&
-        e.target.textContent === '-'
-)
-        return;
+		// Prevent three minus signs in a row, or a minus sign after another operator and a minus sign (e.g., ×--)
+		if (isSecondLastCharOperator && lastCharacter === '-' && e.target.textContent === '-') return;
 
-        addBrackets();
-        displayCharacters(e);
-        });
+		addBrackets();
+		displayCharacters(e);
+	});
 });
 function addBrackets() {
-	let currentInputValue = resultInput.value;
+	let currentInputValue = resultInput.valueZ
 	if (
 		currentInputValue.at(-2) === '-' &&
 		(currentInputValue.at(-3) === '×' || currentInputValue.at(-3) === '÷' || currentInputValue.at(-3) === '+' || currentInputValue.at(-3) === '-')
