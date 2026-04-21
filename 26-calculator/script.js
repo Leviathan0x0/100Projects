@@ -72,7 +72,7 @@ arithmeticSymbols.forEach((operation) => {
 	});
 });
 function addBrackets() {
-	let currentInputValue = resultInput.valueZ
+	let currentInputValue = resultInput.value;
 	if (
 		currentInputValue.at(-2) === '-' &&
 		(currentInputValue.at(-3) === '×' || currentInputValue.at(-3) === '÷' || currentInputValue.at(-3) === '+' || currentInputValue.at(-3) === '-')
