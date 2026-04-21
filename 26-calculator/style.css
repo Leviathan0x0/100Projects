@@ -52,6 +52,7 @@ body {
 	color: var(--disabled-theme);
 	border-radius: 1rem;
 	margin-top: 2rem;
+	cursor: pointer;
 }
 
 .calculator.light .theme-toggle {
@@ -152,6 +153,7 @@ button {
 	background: #282b32;
 	color: var(--font-dark);
 	transition: all 0.2s ease-in-out;
+	cursor: pointer;
 }
 
 .operations:not(#percent),
