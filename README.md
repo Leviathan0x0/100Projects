@@ -78,4 +78,4 @@ To explore this repository locally:
 
 ---
 
-*Keep building and learning! Only 73 more projects to go!* 💪
+*Constantly learning and building! Only 73 more projects to go!* 💪
