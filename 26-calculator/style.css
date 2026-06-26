@@ -37,6 +37,7 @@ body {
 	align-items: center;
 	width: max-content;
 	box-shadow: 0 10px 50px rgba(0, 0, 0, 0.2);
+	width: 100%;
 	max-width: 370px;
 	transition: all 0.3s ease;
 

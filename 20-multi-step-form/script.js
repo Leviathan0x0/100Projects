@@ -139,7 +139,6 @@ function updateBilling() {
 		addonPrice.textContent = isYearly ? `+$${addonPrices[addonName].yearly}/yr` : `+$${addonPrices[addonName].monthly}/mo`;
 	});
 }
-
 function updateSummary() {
 	const selectedPlan = document.querySelector('input[name="plan"]:checked').value;
 	const planNameCapitalized = selectedPlan.charAt(0).toUpperCase() + selectedPlan.slice(1);
